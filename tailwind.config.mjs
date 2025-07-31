@@ -4,18 +4,41 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          bg: "#151515",
-          primary: "#1FA8F2",
-          primaryLight: "#4FC3F7",
-          primaryDark: "#157ABF",
-          surface: "#1E1E1E",
-          muted: "#2A2A2A",
-          text: "#EDEDED",
-          secondary: "#F2994A",
-          success: "#10B981",
-          warning: "#FACC15",
-          danger: "#EF4444",
+        background: "hsl(var(--background) / <alpha-value>)",
+        foreground: "hsl(var(--foreground) / <alpha-value>)",
+        "foreground-muted": "hsl(var(--foreground-muted) / <alpha-value>)",
+
+        primary: {
+          DEFAULT: "hsl(var(--primary) / <alpha-value>)",
+          foreground: "hsl(var(--primary-foreground) / <alpha-value>)",
+        },
+
+        surface: {
+          DEFAULT: "hsl(var(--surface) / <alpha-value>)",
+          foreground: "hsl(var(--surface-foreground) / <alpha-value>)",
+          muted: "hsl(var(--surface-muted) / <alpha-value>)",
+        },
+
+        "surface-dark": {
+          DEFAULT: "hsl(var(--surface-dark) / <alpha-value>)",
+          foreground: "hsl(var(--surface-dark-foreground) / <alpha-value>)",
+          muted: "hsl(var(--surface-dark-muted) / <alpha-value>)",
+        },
+
+        accent: "hsl(var(--accent) / <alpha-value>)",
+        border: "hsl(var(--border) / <alpha-value>)",
+
+        success: {
+          DEFAULT: "hsl(var(--success) / <alpha-value>)",
+          foreground: "hsl(var(--success-foreground) / <alpha-value>)",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning) / <alpha-value>)",
+          foreground: "hsl(var(--warning-foreground) / <alpha-value>)",
+        },
+        error: {
+          DEFAULT: "hsl(var(--error) / <alpha-value>)",
+          foreground: "hsl(var(--error-foreground) / <alpha-value>)",
         },
       },
     },

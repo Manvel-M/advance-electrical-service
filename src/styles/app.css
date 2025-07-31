@@ -3,8 +3,45 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Base */
+    --background: 0 0% 93%;
+    --foreground: 0 0% 12%;
+    --foreground-muted: 0 0% 30%;
+
+    /* Primary */
+    --primary: 32 77% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Surface */
+    --surface: 0 0% 100%;
+    --surface-foreground: 0 0% 12%;
+    --surface-muted: 0 0% 30%;
+
+    /* Surface Dark */
+    --surface-dark: 0 0% 12%;
+    --surface-dark-foreground: 0 0% 100%;
+    --surface-dark-muted: 0 0% 74%;
+
+    /* Accent & Border */
+    --accent: 200 74% 53%;
+    --border: 0 0% 82%;
+
+    /* Status Colors */
+    --success: 146 59% 41%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 91% 53%;
+    --warning-foreground: 0 0% 12%;
+
+    --error: 0 70% 50%;
+    --error-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
   body {
-    @apply bg-brand-bg text-brand-text font-sans;
+    @apply bg-background text-foreground font-sans;
   }
   h2,
   h3,
