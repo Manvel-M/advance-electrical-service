@@ -1,16 +1,53 @@
 ---
-const links = [
-    {name: 'Home', path: '/'},
-    {name: 'Services', path: '/services'},
-    {name: 'Contact', path: '/contact'},
-    {name: 'About', path: '/about'}
-]
+import MobileNav from "./MobileNav.astro";
+import Nav from "./Nav.astro";
 ---
 
-<nav>
-    <ul>
-        {links.map((link) => {
-            <li><a href={link.path}>{link.name}</a></li>
-        })}
-    </ul>
-</nav>
+<header
+  id="site-header"
+  class="h-[70px] fixed w-full bg-black/40 shadow-md flex items-center justify-between px-4 z-50 transition-all duration-300 ease-in-out backdrop-blur-lg"
+>
+  <div class="logo">
+    <a href="/" class="text-xl font-bold">Advance Electrical Service</a>
+  </div>
+  <Nav />
+  <MobileNav />
+</header>
+
+<script is:inline>
+  let lastScrollY = window.scrollY;
+  const header = document.getElementById("site-header");
+
+  const updateHeader = () => {
+    const currentScroll = window.scrollY;
+
+    // Toggle solid background if scrolled > 50px
+    if (currentScroll > 50) {
+      header.classList.add("bg-black/70");
+    } else {
+      header.classList.remove("bg-black/70");
+    }
+
+    // Show/hide logic based on scroll direction and position
+    if (currentScroll > lastScrollY && currentScroll > 100) {
+      // Scrolling down past 100px
+      header.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScrollY) {
+      // Scrolling up
+      header.classList.remove("-translate-y-full");
+    }
+
+    lastScrollY = currentScroll;
+  };
+
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateHeader();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>

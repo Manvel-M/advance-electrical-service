@@ -1,0 +1,113 @@
+---
+import { navLinks } from "@/data/links";
+---
+
+<div class="md:hidden">
+  <div
+    class="menu-toggle relative flex flex-col items-center justify-center w-10 h-10 cursor-pointer z-50"
+  >
+    <div class="line bg-brand-text"></div>
+    <div class="line bg-brand-text"></div>
+    <div class="line bg-brand-text"></div>
+  </div>
+</div>
+<nav
+  class="mobile-nav absolute w-full left-0 top-0 -translate-y-full bg-black/80 backdrop-blur-lg p-4 z-20 transition-all duration-300"
+>
+  <ul class="flex flex-col p-4 z-50">
+    {
+      navLinks.map((link) => (
+        <li class="mb-4">
+          <a
+            href={link.path}
+            class="movile-nav-link text-brand-text text-lg font-semibold"
+          >
+            {link.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+<div
+  class="mobile-nav-overlay absolute top-0 left-0 right-0 h-screen bottom-0 bg-black/50 backdrop-blur-lg hidden transition-all duration-300"
+>
+</div>
+
+<style>
+  /* Menu */
+  .line {
+    height: 2px;
+    width: 22px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    position: absolute;
+  }
+  .line:nth-child(1) {
+    transform: translateY(8px);
+  }
+  .line:nth-child(2) {
+    transform: translateY(0);
+  }
+  .line:nth-child(3) {
+    transform: translateY(-8px);
+  }
+
+  .menu-toggle.active .line:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .menu-toggle.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  /* Mobile Nav */
+  .mobile-nav {
+    transorm: translateY(-100%);
+  }
+  .mobile-nav.active {
+    transform: translateY(0);
+    z-index: 10;
+  }
+  /* Mobile Nav Overlay */
+  .mobile-nav-overlay {
+    display: none;
+  }
+  .mobile-nav-overlay.active {
+    display: block;
+  }
+</style>
+
+<script is:inline>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileNav = document.querySelector(".mobile-nav");
+  const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
+  const mobileNavLinks = document.querySelectorAll(".movile-nav-link");
+
+  const toggleNav = () => {
+    const isActive = menuToggle.classList.toggle("active");
+    mobileNav.classList.toggle("active");
+    mobileNavOverlay.classList.toggle("active");
+
+    document.body.classList.toggle("overflow-hidden", isActive);
+  };
+
+  const closeNav = () => {
+    menuToggle.classList.remove("active");
+    mobileNav.classList.remove("active");
+    mobileNavOverlay.classList.remove("active");
+    mobileNavLinks.forEach((link) => link.classList.remove("active"));
+
+    document.body.classList.remove("overflow-hidden");
+  };
+
+  window.addEventListener("resize", () => {
+    // Close if screen is wider than mobile breakpoint (e.g. md = 768px)
+    if (window.innerWidth >= 768) {
+      closeNav();
+    }
+  });
+  mobileNavOverlay.addEventListener("click", closeNav);
+  menuToggle.addEventListener("click", toggleNav);
+</script>
