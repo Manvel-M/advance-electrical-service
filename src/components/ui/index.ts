@@ -1,3 +1,3 @@
 import Button from "./Button";
-
-export { Button };
+import ServiceCard from "./ServiceCard.astro";
+export { Button, ServiceCard };

@@ -1,0 +1,49 @@
+---
+import { ServiceCard } from "@/components/ui";
+import House from "@/assets/icons/house.svg";
+import Commercial from "@/assets/icons/commercial.svg";
+
+const services = [
+  {
+    icon: House,
+    title: "Residential Services",
+    description:
+      "Safe, efficient, and modern electrical solutions for homes of all sizes from panel upgrades to lighting installations.",
+  },
+  {
+    icon: Commercial,
+    title: "Commercial Services",
+    description:
+      "Robust electrical systems built to handle high-demand environments, ensuring safety, performance, and reliability for industrial facilities.",
+  },
+  {
+    icon: House,
+    title: "Industrial Services",
+    description:
+      "Customized electrical services for businesses, offices, and retail spaces keeping your operations powered, compliant, and future-ready.",
+  },
+];
+---
+
+<section class="max-w-7xl mx-auto px-4 pt-20">
+  <!-- Heading -->
+  <div class="text-center mb-12">
+    <h2>Our Services</h2>
+    <p class="text-foreground-muted">
+      Explore our range of professional electrical services designed to power
+      homes, businesses, and everything in between.
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Service Cards -->
+    {
+      services.map((service) => (
+        <ServiceCard
+          icon={service.icon}
+          title={service.title}
+          description={service.description}
+        />
+      ))
+    }
+  </div>
+</section>

@@ -1,4 +1,4 @@
 import Header from "./header/Header.astro";
 import Hero from "./hero/Hero.astro";
-
-export { Header, Hero };
+import Services from "./services/Services.astro";
+export { Header, Hero, Services };
