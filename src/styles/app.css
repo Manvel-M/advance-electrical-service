@@ -63,4 +63,7 @@
   h1 {
     @apply text-4xl font-black max-md:text-3xl max-sm:text-2xl;
   }
+  h2 {
+    @apply text-3xl font-bold max-md:text-2xl max-sm:text-xl;
+  }
 }
