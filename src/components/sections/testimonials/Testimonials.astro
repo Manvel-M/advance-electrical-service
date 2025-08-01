@@ -1,0 +1,49 @@
+---
+import { TestimonialCard } from "@/components/ui";
+import { init } from "astro/virtual-modules/prefetch.js";
+const testimonials = [
+  {
+    quote:
+      "I needed someone to replace our kitchen's exhaust fan. Robert did all the leg work to find us the best fan for our needs and installed it efficiently and cleanly. He was friendly, knowledgeable, prompt and went out of his way to be helpful. We will certainly use him for all our future electrical needs.",
+    author: "John Doe",
+    initials: "JD",
+  },
+  {
+    quote:
+      "Strongly recommend!! Robert is totally professional, responded quickly, showed up right on time and not only fixed the problem super-fast, also explained what was going on and why.I would use this service again in a heartbeat.",
+    author: "Jane Smith",
+    initials: "JS",
+  },
+  {
+    quote:
+      "Strongly recommend.  Had a tough job - installing 6 recessed lights and exchanging four fans.  On time and gave a reasonable estimate.  They made sure everything was perfect.   I definitely will use for all electrical needs.",
+    author: "Bob Johnson",
+    initials: "BJ",
+  },
+];
+---
+
+<section class="bg-surface-dark text-surface-dark-foreground">
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <!-- Heading and Description -->
+    <div class="text-center mb-12">
+      <h2>What Our Clients Say</h2>
+      <p class="text-surface-dark-muted">
+        Hear from our satisfied customers about their experiences with our
+        services.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Testimonials -->
+      {
+        testimonials.map((testimonial) => (
+          <TestimonialCard
+            quote={testimonial.quote}
+            author={testimonial.author}
+            initials={testimonial.initials}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
