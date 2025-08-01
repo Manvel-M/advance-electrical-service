@@ -1,17 +1,27 @@
 ---
 import MobileNav from "./MobileNav.astro";
 import Nav from "./Nav.astro";
+import { Button } from "@/components/ui";
 ---
 
 <header
   id="site-header"
   class="fixed w-full h-20 top-0 left-0 bg-surface text-surface-foreground shadow-lg flex items-center justify-between px-4 z-50 transition-all duration-300 ease-in-out"
 >
-  <div class="logo">
-    <a href="/" class="text-xl font-bold">Advance Electrical Service</a>
+  <!-- Logo -->
+  <div class="order-1">
+    <a href="/" class="text-xl max-md:text-lg font-bold"
+      >Advance Electrical Service</a
+    >
   </div>
-  <Nav />
-  <MobileNav />
+  <!-- Navigation -->
+  <div class="order-2 max-md:order-3">
+    <Nav />
+    <MobileNav />
+  </div>
+  <div class="order-3 max-md:order-2">
+    <Button variant="primary" rounded="full">Get a Free Quote</Button>
+  </div>
 </header>
 
 <script is:inline>
