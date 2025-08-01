@@ -27,6 +27,16 @@
     --accent: 200 74% 53%;
     --border: 0 0% 82%;
 
+    /* Input */
+    --input: 0 0% 100%;
+    --input-foreground: 0 0% 12%;
+    --input-muted: 0 0% 95%;
+    --input-border: 0 0% 82%;
+
+    /* Ring */
+    --ring: 200 74% 53%;
+    --ring-offset: 0 0% 100%;
+
     /* Status Colors */
     --success: 146 59% 41%;
     --success-foreground: 0 0% 100%;

@@ -28,6 +28,18 @@ export default {
         accent: "hsl(var(--accent) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
 
+        input: {
+          DEFAULT: "hsl(var(--input) / <alpha-value>)",
+          foreground: "hsl(var(--input-foreground) / <alpha-value>)",
+          input: "hsl(var(--input-input) / <alpha-value>)",
+          "input-muted": "hsl(var(--input-muted) / <alpha-value>)",
+        },
+
+        ring: {
+          DEFAULT: "hsl(var(--ring) / <alpha-value>)",
+          "ring-offset": "hsl(var(--ring-offset) / <alpha-value>)",
+        },
+
         success: {
           DEFAULT: "hsl(var(--success) / <alpha-value>)",
           foreground: "hsl(var(--success-foreground) / <alpha-value>)",
