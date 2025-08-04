@@ -1,3 +1,8 @@
+import {
+  forwardRef,
+  type ElementType,
+  type ComponentPropsWithoutRef,
+} from "react";
 import { twMerge } from "tailwind-merge";
 import { cva, type VariantProps } from "class-variance-authority";
 
@@ -8,8 +13,9 @@ const buttonVariants = cva(
       variant: {
         default: "bg-foreground text-background hover:bg-foreground/80",
         primary: "bg-primary text-primary-foreground hover:bg-primary/80",
+        primaryAlt:
+          "bg-primary-foreground text-primary hover:bg-primary-foreground/80",
         destructive: "bg-error text-error-foreground hover:bg-error/80",
-
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
@@ -37,17 +43,32 @@ const buttonVariants = cva(
   },
 );
 
-export default function Button({
-  className,
-  variant,
-  size,
-  rounded,
-  ...props
-}: React.ComponentProps<"button"> & VariantProps<typeof buttonVariants>) {
-  return (
-    <button
-      className={twMerge(buttonVariants({ variant, size, rounded }), className)}
-      {...props}
-    />
-  );
-}
+type ButtonProps<C extends ElementType = "button"> = {
+  as?: C;
+  className?: string;
+} & VariantProps<typeof buttonVariants> &
+  Omit<ComponentPropsWithoutRef<C>, "as" | "className">;
+
+const Button = forwardRef(
+  <C extends ElementType = "button">(
+    { as, className, variant, size, rounded, ...props }: ButtonProps<C>,
+    ref: React.Ref<any>,
+  ) => {
+    const Component = as ?? ((props as any).href ? "a" : "button");
+
+    return (
+      <Component
+        ref={ref}
+        className={twMerge(
+          buttonVariants({ variant, size, rounded }),
+          className,
+        )}
+        {...props}
+      />
+    );
+  },
+);
+
+Button.displayName = "Button";
+
+export { Button, buttonVariants };
