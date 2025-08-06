@@ -1,7 +1,10 @@
 ---
-import { ServiceCard } from "@/components/ui";
+import { ServiceCard, ServicesCard } from "@/components/ui";
 import House from "@/assets/icons/house.svg";
 import Commercial from "@/assets/icons/commercial.svg";
+import Lightning from "@/assets/icons/lightning.svg";
+import Ev from "@/assets/icons/ev.svg";
+import Bulb from "@/assets/icons/bulb.svg";
 
 const services = [
   {
@@ -12,20 +15,51 @@ const services = [
   },
   {
     icon: Commercial,
-    title: "Commercial Services",
+    title: "Commercial & Industrial Services",
     description:
       "Robust electrical systems built to handle high-demand environments, ensuring safety, performance, and reliability for industrial facilities.",
   },
   {
-    icon: House,
-    title: "Industrial Services",
+    icon: Lightning,
+    title: "Emergency Services",
     description:
-      "Customized electrical services for businesses, offices, and retail spaces keeping your operations powered, compliant, and future-ready.",
+      "Rapid response to urgent electrical issues, minimizing downtime and restoring safety with dependable 24/7 service.",
+  },
+];
+
+const servicesCard = [
+  {
+    title: "Electrical Upgrades & Repairs",
+    description:
+      "Keep your system safe and up to code with expert panel upgrades, rewiring, and repairs.",
+    link: "/services/electrical-upgrades",
+    icon: Lightning,
+  },
+  {
+    title: "Smart Tech & Energy Solutions",
+    description:
+      "Stay connected and efficient with EV charger installs, smart home automation, and energy-saving upgrades.",
+    link: "/services/smart-tech",
+    icon: Ev,
+  },
+  {
+    title: "Lighting Installation & Design",
+    description:
+      "From elegant chandeliers to efficient LED and outdoor lighting we do it all.",
+    link: "/services/lighting-installation",
+    icon: Bulb,
+  },
+  {
+    title: "Commercial & Industrial Services",
+    description:
+      "Scalable electrical systems for commercial spaces, warehouses, and large-scale operations.",
+    link: "/services/commercial-industrial",
+    icon: Commercial,
   },
 ];
 ---
 
-<section class="max-w-7xl mx-auto px-4 pt-20">
+<section class="max-w-7xl mx-auto px-4 py-20">
   <!-- Heading -->
   <div class="text-center mb-12">
     <h2>Our Services</h2>
@@ -42,6 +76,20 @@ const services = [
           icon={service.icon}
           title={service.title}
           description={service.description}
+        />
+      ))
+    }
+  </div>
+
+  <!-- Services Card -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
+    {
+      servicesCard.map((card) => (
+        <ServicesCard
+          title={card.title}
+          description={card.description}
+          link={card.link}
+          icon={card.icon}
         />
       ))
     }
