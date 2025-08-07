@@ -1,0 +1,30 @@
+---
+import { services } from "@/data/servicesData";
+---
+
+<div class="max-w-7xl mx-auto px-4 py-8">
+  {
+    services.map((service) => (
+      <div class="bg-surface flex max-md:flex-col mb-6 shadow-md rounded-lg ">
+        <div class="text-surface-foreground p-6 max-md:w-full w-3/4">
+          <h2>{service.title}</h2>
+          <p class="mb-4 text-surface-muted">{service.description}</p>
+          <h3>{service.details.title}</h3>
+          <ul class="mb-4">
+            {service.details.items.map((detail) => (
+              <li class="list-disc ml-6">{detail}</li>
+            ))}
+          </ul>
+          <p>{service.note}</p>
+        </div>
+        <div class="flex items-center max-md:justify-center justify-end p-6">
+          <img
+            src="https://picsum.photos/300/300"
+            alt={service.title}
+            class="w-[300px] h-[300px] rounded-lg"
+          />
+        </div>
+      </div>
+    ))
+  }
+</div>
