@@ -1,5 +1,5 @@
 ---
-import { Header } from "@/components/sections";
+import { Footer, Header } from "@/components/sections";
 import "@/styles/app.css";
 
 type Props = {
@@ -15,8 +15,15 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title title={title}></title>
   </head>
-  <body>
-    <Header />
-    <slot />
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <Header class="flex-none" />
+
+    <!-- Main Content -->
+    <main class="flex-1 pt-20">
+      <slot />
+    </main>
+    <!-- Footer -->
+    <Footer class="flex-none" />
   </body>
 </html>
