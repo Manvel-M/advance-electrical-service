@@ -1,0 +1,15 @@
+---
+import { twMerge } from "tailwind-merge";
+type Props = {
+  class?: string;
+};
+const { class: className } = Astro.props as Props;
+---
+
+<footer
+  class={twMerge(
+    "bg-surface-dark text-surface-dark-foreground w-full h-[300px]",
+    className,
+  )}
+>
+</footer>
