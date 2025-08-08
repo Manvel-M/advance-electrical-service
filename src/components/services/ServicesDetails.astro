@@ -1,5 +1,7 @@
 ---
 import { services } from "@/data/servicesData";
+import CheckIcon from "@/assets/icons/check.svg";
+import { Button } from "../ui";
 ---
 
 <div class="max-w-7xl mx-auto px-4 py-8">
@@ -7,12 +9,15 @@ import { services } from "@/data/servicesData";
     services.map((service) => (
       <div class="bg-surface flex max-md:flex-col mb-6 shadow-md rounded-lg ">
         <div class="text-surface-foreground p-6 max-md:w-full w-3/4">
-          <h2>{service.title}</h2>
+          <h2 class="mb-4">{service.title}</h2>
           <p class="mb-4 text-surface-muted">{service.description}</p>
-          <h3>{service.details.title}</h3>
+          <h3 class="mb-2">{service.details.title}</h3>
           <ul class="mb-4">
             {service.details.items.map((detail) => (
-              <li class="list-disc ml-6">{detail}</li>
+              <li class="ml-2">
+                <CheckIcon class="inline-block mr-2 w-5 h-5 text-green-700" />
+                {detail}
+              </li>
             ))}
           </ul>
           <p>{service.note}</p>
@@ -27,4 +32,16 @@ import { services } from "@/data/servicesData";
       </div>
     ))
   }
+  <div
+    class="bg-surface-dark text-surface-dark-foreground p-6 flex flex-col items-center justify-center rounded-lg shadow-md"
+  >
+    <h2 class="pb-4">Ready to get started?</h2>
+    <p class="pb-4 text-surface-dark-muted">
+      Contact us today for a free estimate or to schedule a service appointment.
+      We look forward to powering your home or business!
+    </p>
+    <Button href="/contact" variant="primary" rounded="full"
+      >Contact Us Today</Button
+    >
+  </div>
 </div>
