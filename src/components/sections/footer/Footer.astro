@@ -1,4 +1,5 @@
 ---
+import { company } from "@/data/company";
 import { twMerge } from "tailwind-merge";
 type Props = {
   class?: string;
@@ -8,8 +9,60 @@ const { class: className } = Astro.props as Props;
 
 <footer
   class={twMerge(
-    "bg-surface-dark text-surface-dark-foreground w-full h-[300px]",
+    "bg-surface-dark text-surface-dark-foreground py-8",
     className,
   )}
 >
+  <div class="w-full mx-auto">
+    <div class="grid grid-cols-3 max-md:grid-cols-1 px-4 gap-4">
+      <!-- Company Info -->
+      <div class="col-span-1 flex flex-col items-center">
+        <div class="max-md:text-center">
+          <h2 class="text-lg font-semibold">{company.name}</h2>
+
+          <p class="text-sm text-surface-dark-muted">
+            Your trusted partner for all electrical needs.
+          </p>
+          <p class="text-sm text-surface-dark-muted">
+            License: {company.license}
+          </p>
+          <p class="text-sm text-surface-dark-muted italic">
+            {company.street}
+            <br />
+            {company.city}, {company.state}
+            {company.zip}
+          </p>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-span-1 flex flex-col items-center max-md:text-center">
+        <h3 class="text-md font-semibold">Quick Links</h3>
+        <ul class="text-sm text-surface-dark-muted">
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Follow Us -->
+      <div class="col-span-1 flex flex-col items-center max-md:text-center">
+        <h3 class="text-md font-semibold">Follow Us</h3>
+        <ul class="text-sm text-surface-dark-muted">
+          <li><a href="/">Facebook</a></li>
+          <li><a href="/">Twitter</a></li>
+          <li><a href="/">LinkedIn</a></li>
+          <li><a href="/">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Line Break -->
+    <div class="h-[1px] w-[90%] bg-surface-dark-muted my-8 mx-auto"></div>
+    <!-- Copyright Notice -->
+    <div class="w-[90%] mx-auto max-md:text-center">
+      <p class="text-sm text-surface-dark-muted">
+        &copy; {new Date().getFullYear()}
+        {company.name}. All rights reserved.
+      </p>
+    </div>
+  </div>
 </footer>
