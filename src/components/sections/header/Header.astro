@@ -1,0 +1,66 @@
+---
+import MobileNav from "./MobileNav.astro";
+import Nav from "./Nav.astro";
+import { Button } from "@/components/ui";
+import { twMerge } from "tailwind-merge";
+
+type Props = {
+  class?: string;
+};
+
+const { class: className } = Astro.props;
+---
+
+<header
+  id="site-header"
+  class={twMerge(
+    "fixed w-full h-20 top-0 left-0 bg-surface text-surface-foreground shadow-lg flex items-center justify-between px-4 z-50  transition-all duration-300 ease-in-out flex-none",
+    className,
+  )}
+>
+  <!-- Logo -->
+  <div class="order-1">
+    <a href="/" class="text-xl max-md:text-lg font-bold"
+      >Advance Electrical Service</a
+    >
+  </div>
+  <!-- Navigation -->
+  <div class="order-2 max-md:order-3">
+    <Nav />
+    <MobileNav />
+  </div>
+  <div class="order-3 max-md:order-2">
+    <Button variant="primary" rounded="full">Get a Free Quote</Button>
+  </div>
+</header>
+
+<script is:inline>
+  let lastScrollY = window.scrollY;
+  const header = document.getElementById("site-header");
+
+  const updateHeader = () => {
+    const currentScroll = window.scrollY;
+
+    // Show/hide logic based on scroll direction and position
+    if (currentScroll > lastScrollY && currentScroll > 100) {
+      // Scrolling down past 100px
+      header.classList.add("-translate-y-full");
+    } else if (currentScroll < lastScrollY) {
+      // Scrolling up
+      header.classList.remove("-translate-y-full");
+    }
+
+    lastScrollY = currentScroll;
+  };
+
+  let ticking = false;
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateHeader();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
