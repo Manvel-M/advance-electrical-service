@@ -45,21 +45,31 @@ function ContactForm2() {
 
   const handleSubmitForm = async (data: ContactForm) => {
     try {
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+      // Netlify requires form-encoded data
+      const formData = new FormData();
+      Object.entries(data).forEach(([key, value]) => {
+        formData.append(key, value ?? "");
       });
-    } catch (error) {
-      console.error("Submission error", error);
+      formData.append("form-name", "contact");
+
+      await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+    } catch (err) {
+      console.error("Submission failed", err);
     }
   };
 
   return (
     <>
-      <form data-netlify="true" onSubmit={handleSubmit(handleSubmitForm)}>
+      <form
+        name="contact"
+        data-netlify="true"
+        onSubmit={handleSubmit(handleSubmitForm)}
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             id="first-name"
