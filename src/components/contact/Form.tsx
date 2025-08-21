@@ -43,9 +43,23 @@ function ContactForm2() {
   //   }
   // };
 
+  const handleSubmitForm = async (data: ContactForm) => {
+    try {
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error("Submission error", error);
+    }
+  };
+
   return (
     <>
-      <form>
+      <form data-netlify="true" onSubmit={handleSubmit(handleSubmitForm)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             id="first-name"
