@@ -26,23 +26,6 @@ function ContactForm2() {
     reset,
   } = useForm({ resolver: zodResolver(ContactFormSchema) });
 
-  //   const notifySuccess = () => toast("Message sent successfuly!");
-  //   const notifyError = () => toast("Something went wrong. Try again later.");
-
-  // const onSubmit = async (data: ContactForm) => {
-  //   try {
-  //     const { error } = await actions.send(data);
-  //     if (error) {
-  //       notifyError();
-  //     } else {
-  //       notifySuccess();
-  //       reset();
-  //     }
-  //   } catch (error) {
-  //     console.error("Submission error", error);
-  //   }
-  // };
-
   const handleSubmitForm = async (data: ContactForm) => {
     try {
       // Netlify requires form-encoded data
@@ -77,6 +60,7 @@ function ContactForm2() {
             error={errors.firstName}
             placeholder="First Name"
             className="w-full"
+            {...register("firstName")}
           />
 
           <FormField
@@ -85,6 +69,7 @@ function ContactForm2() {
             error={errors.lastName}
             placeholder="Last Name"
             className="w-full"
+            {...register("lastName")}
           />
 
           <FormField
@@ -93,6 +78,7 @@ function ContactForm2() {
             error={errors.email}
             placeholder="Email"
             className="w-full"
+            {...register("email")}
           />
 
           <FormField
@@ -101,6 +87,7 @@ function ContactForm2() {
             error={errors.phone}
             placeholder="Phone"
             className="w-full"
+            {...register("phone")}
           />
 
           <FormField
@@ -113,6 +100,7 @@ function ContactForm2() {
               { value: "", label: "Select a service" },
               ...selectOptions,
             ]}
+            {...register("serviceNeeded")}
           />
 
           <FormField
@@ -122,6 +110,7 @@ function ContactForm2() {
             error={errors.additionalInformation}
             placeholder="Additional Information"
             className="w-full md:col-span-2"
+            {...register("additionalInformation")}
           />
           <div className="flex justify-center md:col-span-2">
             <Button
