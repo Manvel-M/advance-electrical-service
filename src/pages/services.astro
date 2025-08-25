@@ -1,9 +1,13 @@
 ---
 import { Layout } from "@/layouts";
 import { ServicesDetails } from "@/components/services";
+import { pageData } from "@/data/pageData";
 ---
 
-<Layout title="Our Services">
+<Layout
+  title={pageData.services.title}
+  description={pageData.services.description}
+>
   <h1 class="text-center mt-8">Our Services</h1>
   <p class="text-center text-foreground-muted">
     We offer a wide range of electrical services to meet your needs.

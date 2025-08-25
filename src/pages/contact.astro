@@ -1,9 +1,13 @@
 ---
 import { Layout } from "@/layouts";
 import { Form } from "@/components/contact";
+import { pageData } from "@/data/pageData";
 ---
 
-<Layout title="Contact">
+<Layout
+  title={pageData.contact.title}
+  description={pageData.contact.description}
+>
   <section class="max-w-7xl px-4 mx-auto py-8">
     <h1 class="text-center">Contact Us</h1>
     <p class="text-center text-foreground-muted mb-8">

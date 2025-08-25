@@ -1,9 +1,10 @@
 ---
 import { Button } from "@/components/ui";
 import { Layout } from "@/layouts";
+import { pageData } from "@/data/pageData";
 ---
 
-<Layout title="About Us">
+<Layout title={pageData.about.title} description={pageData.about.description}>
   <div class="max-w-7xl mx-auto px-4 py-8">
     <h1 class="mb-10">About Us</h1>
     <p>

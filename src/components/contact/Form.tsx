@@ -1,24 +1,20 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-// import { actions } from "astro:actions";
-// import { contactSchema, type ContactFormData } from "@/schema/contactSchema";
-
 import FormField from "./FormField";
-import { Button, Input, Select, Textarea } from "@/components/ui";
+import { Button } from "@/components/ui";
 import {
   ContactFormSchema,
   serviceOptions,
   type ContactForm,
 } from "@/schemas/contactForm";
-// import { toast, Toaster } from "react-hot-toast";
 
 const selectOptions = serviceOptions.map((option) => ({
   value: option,
   label: option,
 }));
 
-function ContactForm2() {
+function Form() {
   const {
     register,
     handleSubmit,
@@ -28,7 +24,6 @@ function ContactForm2() {
 
   const handleSubmitForm = async (data: ContactForm) => {
     try {
-      // Netlify requires form-encoded data
       const formData = new FormData();
       Object.entries(data).forEach(([key, value]) => {
         formData.append(key, value ?? "");
@@ -39,6 +34,7 @@ function ContactForm2() {
         method: "POST",
         body: formData,
       });
+      reset();
     } catch (err) {
       console.error("Submission failed", err);
     }
@@ -127,4 +123,4 @@ function ContactForm2() {
   );
 }
 
-export default ContactForm2;
+export default Form;
