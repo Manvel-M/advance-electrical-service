@@ -5,10 +5,11 @@ import {
   Testimonials,
   CallToAction,
 } from "@/components/sections";
+import { pageData } from "@/data/pageData";
 import { Layout } from "@/layouts";
 ---
 
-<Layout title="Advance Electrical Service">
+<Layout title={pageData.home.title} description={pageData.home.description}>
   <Hero />
   <Services />
   <Testimonials />
