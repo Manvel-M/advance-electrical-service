@@ -7,6 +7,7 @@ import Select from "./Select";
 import ServiceCard from "./ServiceCard.astro";
 import TestimonialCard from "./TestimonialCard.astro";
 import ServicesCard from "./ServicesCard.astro";
+import RatingCard from "./RatingCard.astro";
 
 export {
   Button,
@@ -17,4 +18,5 @@ export {
   ServicesCard,
   Label,
   Select,
+  RatingCard,
 };

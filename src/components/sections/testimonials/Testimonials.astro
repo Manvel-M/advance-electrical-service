@@ -1,6 +1,9 @@
 ---
-import { TestimonialCard } from "@/components/ui";
-import { init } from "astro/virtual-modules/prefetch.js";
+import { RatingCard } from "@/components/ui";
+import Google from "@/assets/icons/google.svg";
+import Yelp from "@/assets/icons/yelp.svg";
+import Slider from "./Slider";
+import { company } from "@/data/company";
 const testimonials = [
   {
     quote:
@@ -21,6 +24,19 @@ const testimonials = [
     initials: "BJ",
   },
 ];
+
+const reviewSites = [
+  {
+    name: "Yelp",
+    icon: Yelp,
+    link: company.yelp,
+  },
+  {
+    name: "Google",
+    icon: Google,
+    link: company.google,
+  },
+];
 ---
 
 <section class="bg-surface-dark text-surface-dark-foreground">
@@ -33,17 +49,9 @@ const testimonials = [
         services.
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <!-- Testimonials -->
-      {
-        testimonials.map((testimonial) => (
-          <TestimonialCard
-            quote={testimonial.quote}
-            author={testimonial.author}
-            initials={testimonial.initials}
-          />
-        ))
-      }
+    <div class="flex justify-center gap-4 mb-4">
+      {reviewSites.map((site) => <RatingCard moreReview={site} />)}
     </div>
+    <Slider client:only testimonials={testimonials} />
   </div>
 </section>
