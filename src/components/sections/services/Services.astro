@@ -5,6 +5,7 @@ import Commercial from "@/assets/icons/commercial.svg";
 import Lightning from "@/assets/icons/lightning.svg";
 import Ev from "@/assets/icons/ev.svg";
 import Bulb from "@/assets/icons/bulb.svg";
+import Gallery from "./Gallery.tsx";
 
 const services = [
   {
@@ -80,6 +81,18 @@ const servicesCard = [
       ))
     }
   </div>
+
+  <Gallery
+    client:only
+    images={[
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+      "https://placehold.co/600x400/png",
+    ]}
+  />
 
   <!-- Services Card -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
