@@ -2,7 +2,7 @@
 import { RatingCard } from "@/components/ui";
 import Google from "@/assets/icons/google.svg";
 import Yelp from "@/assets/icons/yelp.svg";
-import Slider from "./Slider";
+import TestimonialSlide from "./TestimonialSlide";
 import { company } from "@/data/company";
 const testimonials = [
   {
@@ -49,9 +49,9 @@ const reviewSites = [
         services.
       </p>
     </div>
-    <div class="flex justify-center gap-4 mb-4">
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
       {reviewSites.map((site) => <RatingCard moreReview={site} />)}
     </div>
-    <Slider client:only testimonials={testimonials} />
+    <TestimonialSlide client:only testimonials={testimonials} />
   </div>
 </section>

@@ -67,3 +67,26 @@
     @apply text-3xl font-bold max-md:text-2xl max-sm:text-xl;
   }
 }
+.slick-slide {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0.6;
+  transform: scale(0.94);
+}
+.slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+.slick-dots {
+  bottom: -28px;
+}
+.slick-slider {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+}
+.slick-list,
+.slick-track {
+  touch-action: pan-y;
+}
