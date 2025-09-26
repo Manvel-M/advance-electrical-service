@@ -41,7 +41,7 @@ const FormField = forwardRef<
         <FieldComponent
           ref={ref}
           id={id}
-          aria-invalid={!!error}
+          aria-invalid={error}
           {...(props as any)}
         />
       )}
