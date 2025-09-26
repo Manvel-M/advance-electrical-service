@@ -39,8 +39,8 @@ const FormField = forwardRef<
       <Label htmlFor={id}>{label}</Label>
       {children ?? (
         <FieldComponent
-          id={id}
           ref={ref}
+          id={id}
           aria-invalid={!!error}
           {...(props as any)}
         />

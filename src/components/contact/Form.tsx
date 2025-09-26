@@ -8,6 +8,7 @@ import {
   serviceOptions,
   type ContactForm,
 } from "@/schemas/contactForm";
+import { actions } from "astro:actions";
 
 const selectOptions = serviceOptions.map((option) => ({
   value: option,
@@ -20,23 +21,30 @@ function Form() {
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm({ resolver: zodResolver(ContactFormSchema) });
+  } = useForm({
+    resolver: zodResolver(ContactFormSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      phone: "",
+      email: "",
+      serviceNeeded: "",
+      additionalInformation: "",
+    },
+  });
 
   const handleSubmitForm = async (data: ContactForm) => {
     try {
-      const formData = new FormData();
-      Object.entries(data).forEach(([key, value]) => {
-        formData.append(key, value ?? "");
-      });
-      formData.append("form-name", "contact");
-
-      await fetch("/", {
-        method: "POST",
-        body: formData,
-      });
-      reset();
-    } catch (err) {
-      console.error("Submission failed", err);
+      const response = await actions.contact(data);
+      if (response.data?.message) {
+        alert(response.data.message);
+        reset();
+      } else {
+        alert("There was an error sending your message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error sending your message. Please try again.");
     }
   };
 
@@ -44,8 +52,8 @@ function Form() {
     <>
       <form
         name="contact"
-        data-netlify="true"
         onSubmit={handleSubmit(handleSubmitForm)}
+        data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
