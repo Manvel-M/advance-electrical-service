@@ -44,19 +44,12 @@ function Form() {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("There was an error sending your message. Please try again.");
     }
   };
 
   return (
     <>
-      <form
-        name="contact"
-        onSubmit={handleSubmit(handleSubmitForm)}
-        data-netlify="true"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="bot-field" />
+      <form onSubmit={handleSubmit(handleSubmitForm)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             id="first-name"
@@ -126,6 +119,19 @@ function Form() {
             </Button>
           </div>
         </div>
+      </form>
+      <form
+        name="contact"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        hidden
+      >
+        <input name="firstName" />
+        <input name="lastName" />
+        <input name="email" />
+        <input name="phone" />
+        <input name="serviceNeeded" />
+        <textarea name="additionalInformation" />
       </form>
     </>
   );
