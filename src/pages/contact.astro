@@ -14,5 +14,18 @@ import { pageData } from "@/data/pageData";
       Have questions or need our services? Reach out to us!
     </p>
     <Form client:load />
+    <form
+      name="contact"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      hidden
+    >
+      <input name="firstName" />
+      <input name="lastName" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="serviceNeeded" />
+      <textarea name="additionalInformation"></textarea>
+    </form>
   </section>
 </Layout>

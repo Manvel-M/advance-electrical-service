@@ -120,19 +120,6 @@ function Form() {
           </div>
         </div>
       </form>
-      <form
-        name="contact"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        hidden
-      >
-        <input name="firstName" />
-        <input name="lastName" />
-        <input name="email" />
-        <input name="phone" />
-        <input name="serviceNeeded" />
-        <textarea name="additionalInformation" />
-      </form>
     </>
   );
 }
