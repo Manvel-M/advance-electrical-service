@@ -55,13 +55,7 @@ function Form() {
 
   return (
     <>
-      <form
-        name="contact"
-        data-netlify="true"
-        onSubmit={handleSubmit(handleSubmitForm)}
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="bot-field" />
+      <form onSubmit={handleSubmit(handleSubmitForm)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             id="first-name"
