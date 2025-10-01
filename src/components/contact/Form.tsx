@@ -25,6 +25,7 @@ function Form() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
+    reset,
   } = useForm({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -42,6 +43,7 @@ function Form() {
       const response = await actions.contact(data);
       if (response.data?.success) {
         setSubmissionState("success");
+        reset();
       } else {
         setSubmissionState("error");
       }
@@ -53,7 +55,14 @@ function Form() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(handleSubmitForm)}>
+      <form
+        name="contact"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onSubmit={handleSubmit(handleSubmitForm)}
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             id="first-name"
@@ -85,6 +94,7 @@ function Form() {
           <FormField
             id="phone"
             label="Phone"
+            type="tel"
             error={errors.phone}
             placeholder="Phone"
             className="w-full"
