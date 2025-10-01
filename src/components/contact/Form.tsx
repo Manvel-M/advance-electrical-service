@@ -9,6 +9,7 @@ import {
   type ContactForm,
 } from "@/schemas/contactForm";
 import { actions } from "astro:actions";
+import { useState } from "react";
 
 const selectOptions = serviceOptions.map((option) => ({
   value: option,
@@ -16,11 +17,14 @@ const selectOptions = serviceOptions.map((option) => ({
 }));
 
 function Form() {
+  const [submissionState, setSubmissionState] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-    reset,
   } = useForm({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -36,14 +40,14 @@ function Form() {
   const handleSubmitForm = async (data: ContactForm) => {
     try {
       const response = await actions.contact(data);
-      if (response.data?.message) {
-        alert(response.data.message);
-        reset();
+      if (response.data?.success) {
+        setSubmissionState("success");
       } else {
-        alert("There was an error sending your message. Please try again.");
+        setSubmissionState("error");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+      setSubmissionState("error");
     }
   };
 
@@ -111,11 +115,23 @@ function Form() {
           />
           <div className="flex justify-center md:col-span-2">
             <Button
-              type={"submit"}
-              variant={isSubmitting ? "secondary" : "primary"}
-              disabled={isSubmitting}
+              type="submit"
+              variant={
+                isSubmitting
+                  ? "secondary"
+                  : submissionState === "success"
+                    ? "success"
+                    : submissionState === "error"
+                      ? "destructive"
+                      : "primary"
+              }
+              disabled={isSubmitting || submissionState === "success"}
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting
+                ? "Sending..."
+                : submissionState === "success"
+                  ? "Message Sent"
+                  : "Send Message"}
             </Button>
           </div>
         </div>
