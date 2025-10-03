@@ -41,6 +41,16 @@ function Form() {
   const handleSubmitForm = async (data: ContactForm) => {
     try {
       const response = await actions.contact(data);
+
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          ...data,
+        }).toString(),
+      });
+
       if (response.data?.success) {
         setSubmissionState("success");
         reset();
