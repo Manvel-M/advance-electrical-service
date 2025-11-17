@@ -9,14 +9,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/netlify": "^6.5.11",
-    "@astrojs/react": "^4.3.1",
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/netlify": "^6.6.1",
+    "@astrojs/react": "^4.4.2",
     "@astrojs/tailwind": "^6.0.2",
     "@hookform/resolvers": "^5.2.1",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "astro": "^5.13.9",
+    "astro": "^5.15.9",
     "class-variance-authority": "^0.7.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
