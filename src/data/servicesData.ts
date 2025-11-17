@@ -14,7 +14,7 @@ export const services = [
       ],
     },
     note: "Upgrading your panel improves safety, supports future electrical additions, and may even be required for insurance or resale. We provide clean, code-compliant installations with minimal disruption to your home.",
-    image: "",
+    image: "/panel.webp",
   },
 
   {
@@ -68,7 +68,7 @@ export const services = [
       ],
     },
     note: "We’ll help you choose the right charging setup, ensure your system meets electrical code, and complete the installation with safety and longevity in mind so your EV is ready when you are.",
-    image: "",
+    image: "/ev.webp",
   },
   {
     title: "Lighting Installation & Upgrades",
@@ -85,7 +85,7 @@ export const services = [
       ],
     },
     note: "Whether it’s a single fixture or a whole-home lighting design, we install everything cleanly and professionally ensuring proper wiring, ideal placement, and full code compliance.",
-    image: "",
+    image: "/lighting.webp",
   },
   {
     title: "Outlet Repairs & Upgrades",
@@ -102,7 +102,7 @@ export const services = [
       ],
     },
     note: "We prioritize safety and convenience in every outlet repair or installation, making sure your home’s wiring is reliable and up to code.",
-    image: "", // Add relevant image
+    image: "/outlet.webp", // Add relevant image
   },
   {
     title: "Ring & Transformer Wiring",
@@ -117,7 +117,7 @@ export const services = [
       ],
     },
     note: "We focus exclusively on the electrical side of doorbell systems — no low-voltage data or networking work. Our professional installations ensure your doorbell system is powered safely and reliably.",
-    image: "",
+    image: "/ring.webp",
   },
 ];
 
