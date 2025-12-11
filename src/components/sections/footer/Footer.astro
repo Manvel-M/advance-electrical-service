@@ -26,12 +26,18 @@ const { class: className } = Astro.props as Props;
           <p class="text-sm text-surface-dark-muted">
             License: {company.license}
           </p>
-          <p class="text-sm text-surface-dark-muted italic">
-            {company.street}
-            <br />
-            {company.city}, {company.state}
-            {company.zip}
-          </p>
+          <div class="flex justify-center mt-2">
+            <a
+              href="https://www.bbb.org/us/ca/sunland/profile/electrician/advance-electrical-service-1216-1000039712/#sealclick"
+              target="_blank"
+              rel="nofollow"
+              ><img
+                src="https://seal-sanjose.bbb.org/seals/black-seal-187-130-whitetxt-bbb-1000039712.png"
+                style="border: 0;"
+                alt="Advance Electrical Service BBB Business Review"
+              /></a
+            >
+          </div>
         </div>
       </div>
       <!-- Quick Links -->
