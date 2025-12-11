@@ -32,7 +32,7 @@ export const services = [
       ],
     },
     note: "Keep your electrical panel functioning safely and efficiently with our expert breaker replacement and maintenance services.",
-    image: "", // Add relevant image
+    image: "/maint.webp", // Add relevant image
   },
 
   {
