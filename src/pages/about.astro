@@ -5,8 +5,16 @@ import { pageData } from "@/data/pageData";
 ---
 
 <Layout title={pageData.about.title} description={pageData.about.description}>
+  <div
+    class="relative w-full h-[500px] bg-[url('/about.webp')] bg-no-repeat bg-top bg-cover text-surface-dark-foreground flex flex-col items-center justify-center"
+  >
+    <div class="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm"></div>
+    <h1 class="text-center mt-8 z-10">About Us</h1>
+    <p class="text-center text-surface-dark-muted z-10">
+      Learn more about our commitment to quality and service.
+    </p>
+  </div>
   <div class="max-w-7xl mx-auto px-4 py-8">
-    <h1 class="mb-10">About Us</h1>
     <p>
       At Advance Electrical Pro Services, we are committed to delivering safe,
       reliable, and high-quality electrical solutions for both residential and

@@ -8,9 +8,15 @@ import { pageData } from "@/data/pageData";
   title={pageData.services.title}
   description={pageData.services.description}
 >
-  <h1 class="text-center mt-8">Our Services</h1>
-  <p class="text-center text-foreground-muted">
-    We offer a wide range of electrical services to meet your needs.
-  </p>
+  <div
+    class="relative w-full h-[500px] bg-[url('/servicesbg.webp')] bg-no-repeat bg-top bg-cover text-surface-dark-foreground flex flex-col items-center justify-center"
+  >
+    <div class="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm"></div>
+    <h1 class="text-center mt-8 z-10">Our Services</h1>
+    <p class="text-center text-surface-dark-muted z-10">
+      We offer a wide range of electrical services to meet your needs.
+    </p>
+  </div>
+
   <ServicesDetails />
 </Layout>
