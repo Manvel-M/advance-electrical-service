@@ -32,9 +32,8 @@ export const services = [
       ],
     },
     note: "Keep your electrical panel functioning safely and efficiently with our expert breaker replacement and maintenance services.",
-    image: "/maint.webp", // Add relevant image
+    image: "/maint.webp",
   },
-
   {
     title: "Rewiring",
     description:
@@ -50,7 +49,7 @@ export const services = [
       ],
     },
     note: "Whether you're renovating a single room or rewiring an entire house, we’ll walk you through the process, provide transparent pricing, and ensure your electrical system is built to last.",
-    image: "",
+    image: "rewire.webp",
   },
 
   {
@@ -88,32 +87,34 @@ export const services = [
     image: "/lighting.webp",
   },
   {
-    title: "Outlet Repairs & Upgrades",
+    title: "Outlet & Switch Installation and Upgrades",
     description:
-      "Faulty or worn-out outlets can cause safety hazards and interrupt your daily routine. We diagnose and repair all types of outlets, including standard, GFCI, and USB-enabled receptacles. Need more outlets or upgrades? We can install additional outlets to meet your home or office needs safely and conveniently.",
+      "Outdated or improperly installed outlets and switches can create safety concerns and limit functionality. We provide professional replacement and installation of electrical outlets and switches, including standard, GFCI, USB-enabled receptacles, and modern switch controls. Whether you need upgrades or additional access points, we ensure all work is performed safely and in full compliance with electrical code.",
     details: {
-      title: "Our outlet services include:",
+      title: "Our outlet and switch services include:",
       items: [
-        "Repair and replacement of damaged or non-functioning outlets",
-        "Installation of GFCI outlets for moisture-prone areas like kitchens and bathrooms",
+        "Replacement of existing outlets and switches",
+        "Installation of GFCI outlets for kitchens, bathrooms, garages, and outdoor locations",
         "Upgrades to tamper-resistant and USB-enabled outlets",
-        "Adding new outlets for home offices, workshops, or entertainment areas",
-        "Ensuring proper grounding and code compliance",
+        "Installation and replacement of standard, dimmer, and smart switches",
+        "Adding new outlets and switches for home offices, workshops, and entertainment areas",
+        "Ensuring proper grounding, circuit protection, and full code compliance",
       ],
     },
     note: "We prioritize safety and convenience in every outlet repair or installation, making sure your home’s wiring is reliable and up to code.",
-    image: "/outlet.webp", // Add relevant image
+    image: "/outlet.webp",
   },
   {
-    title: "Ring & Transformer Wiring",
+    title: "Doorbell, Spotlight & Camera Wiring",
     description:
-      "We specialize in the safe electrical wiring and installation of video doorbells and their power transformers. If you have a Ring, Nest, or similar device that requires dedicated 16-24V transformer wiring connected to your home’s electrical panel, we handle all the hardwiring, circuit installation, and compliance to code.",
+      "We specialize in the safe electrical wiring and installation of video doorbells, hardwired security cameras, and exterior spotlights. Whether you are installing Ring, Nest, or similar devices that require dedicated low-voltage (16–24V) transformers or direct high-voltage (120V) connections, we handle all hardwiring, circuit installation, panel connections, and full compliance with electrical code.",
     details: {
       title: "Our services include:",
       items: [
-        "Hardwiring doorbell transformers to dedicated circuits",
-        "Upgrading or installing doorbell chime wiring if needed",
-        "Ensuring installations meet local electrical code and safety standards",
+        "Hardwiring video doorbells and power transformers to dedicated circuits",
+        "Installing and wiring high-voltage (120V) security cameras and exterior spotlights",
+        "Running new electrical lines from the panel for camera and lighting installations",
+        "Ensuring all installations meet local electrical code and safety standards",
       ],
     },
     note: "We focus exclusively on the electrical side of doorbell systems — no low-voltage data or networking work. Our professional installations ensure your doorbell system is powered safely and reliably.",
