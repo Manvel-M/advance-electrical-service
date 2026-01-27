@@ -21,6 +21,9 @@ const { title, description, link, icon: Icon } = Astro.props;
     <p class="text-base text-surface-dark-muted">{description}</p>
   </div>
   <div class="bg-surface text-primary p-2 rounded-b-md shadow-md text-center">
-    <a href={link} class="hover:underline">Learn More</a>
+    <a href={link} class="hover:underline">
+      <span>Learn more</span>
+      <span class="sr-only"> about our electrical services</span></a
+    >
   </div>
 </div>

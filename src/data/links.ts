@@ -1,8 +1,8 @@
 export const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "Contact", path: "/contact" },
-  { name: "About", path: "/about" },
+  { name: "Electrical Services", path: "/services" },
+  { name: "Contact Us", path: "/contact" },
+  { name: "About Our Company", path: "/about" },
 ];
 export const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com" },
