@@ -21,7 +21,7 @@ const { moreReview } = Astro.props;
   </div>
   <span class="sr-only">{`My Ranch ${moreReview.name} reviews page`}</span>
   <div
-    class="flex flex-col items-center justify-center text-center bg-surface-muted text-surface-dark-foreground text-lg tracking-tight p-4 rounded-r-lg w-[200px]"
+    class="flex flex-col items-center justify-center text-center bg-surface-muted text-surface-dark-foreground text-lg tracking-tight p-4 rounded-r-lg flex-1 min-w-[220px]"
   >
     <p>Reviews on {moreReview.name}!</p>
     <div class="flex items-center">
