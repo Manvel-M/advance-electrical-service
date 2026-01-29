@@ -71,15 +71,16 @@ export const services = [
   {
     title: "Lighting Installation & Upgrades",
     description:
-      "Good lighting transforms the look, feel, and functionality of a space. Whether you're upgrading outdated fixtures, installing elegant chandeliers and wall sconces, adding lighting to dark areas, or designing a layered lighting plan for a remodel, we provide expert installation with a focus on both aesthetics and safety.",
+      "Quality lighting improves both the appearance and functionality of your space. From recessed and canless LED lighting to decorative fixtures and outdoor illumination, we provide professional lighting installation and upgrades with a focus on proper electrical wiring, load capacity, and code-compliant safety.",
     details: {
       title: "Our lighting services include:",
       items: [
-        "Installation of chandeliers, wall sconces, ceiling lights, recessed, and pendant lighting",
-        "Under-cabinet, closet, and accent lighting for enhanced visibility",
-        "Outdoor and landscape lighting for safety, security, and curb appeal",
-        "Motion-sensor and dusk-to-dawn lighting for energy-efficient automation",
-        "Smart lighting setup and switch upgrades (compatible with Alexa, Google, etc.)",
+        "Installation of recessed lighting, including can lights and canless (wafer) LED fixtures",
+        "Installation of chandeliers, wall sconces, ceiling-mounted, and pendant lighting",
+        "Under-cabinet, closet, and accent lighting for improved visibility and design",
+        "Outdoor, security, and landscape lighting with dedicated electrical circuits",
+        "Motion-sensor, dusk-to-dawn, and timer-based lighting controls",
+        "Smart lighting installation and switch upgrades compatible with Alexa, Google, and similar systems",
       ],
     },
     note: "Whether it’s a single fixture or a whole-home lighting design, we install everything cleanly and professionally ensuring proper wiring, ideal placement, and full code compliance.",
@@ -103,20 +104,21 @@ export const services = [
     note: "We prioritize safety and convenience in every outlet repair or installation, making sure your home’s wiring is reliable and up to code.",
     image: "/outlet.webp",
   },
+
   {
-    title: "Doorbell, Spotlight & Camera Wiring",
+    title: "Doorbell, Spotlight & Camera Electrical Wiring",
     description:
-      "We specialize in the safe electrical wiring and installation of video doorbells, hardwired security cameras, and exterior spotlights. Whether you are installing Ring, Nest, or similar devices that require dedicated low-voltage (16–24V) transformers or direct high-voltage (120V) connections, we handle all hardwiring, circuit installation, panel connections, and full compliance with electrical code.",
+      "We provide licensed electrical wiring and installation for video doorbells, hardwired security cameras, and exterior spotlights that require connection to your home’s electrical system. Whether devices use a dedicated doorbell transformer (16–24V) or direct 120V power, our work focuses on electrical circuits, breaker connections, and panel-fed wiring performed in full compliance with electrical code.",
     details: {
-      title: "Our services include:",
+      title: "Our electrical services include:",
       items: [
-        "Hardwiring video doorbells and power transformers to dedicated circuits",
-        "Installing and wiring high-voltage (120V) security cameras and exterior spotlights",
-        "Running new electrical lines from the panel for camera and lighting installations",
-        "Ensuring all installations meet local electrical code and safety standards",
+        "Installing and hardwiring doorbell power transformers connected to the electrical panel",
+        "Running new 120V circuits for hardwired security cameras and exterior spotlights",
+        "Panel, breaker, and junction box connections for camera and lighting power",
+        "Electrical load verification and full code-compliant installation",
       ],
     },
-    note: "We focus exclusively on the electrical side of doorbell systems — no low-voltage data or networking work. Our professional installations ensure your doorbell system is powered safely and reliably.",
+    note: "All work is performed by licensed electricians and is limited to electrical power wiring only. We do not provide low-voltage data, networking, PoE, or smart-home programming services.",
     image: "/ring.webp",
   },
 ];
