@@ -48,7 +48,7 @@ export const services = [
       ],
     },
     note: "Whether you're renovating a single room or rewiring an entire house, we’ll walk you through the process, provide transparent pricing, and ensure your electrical system is built to last.",
-    image: "rewire.webp",
+    image: "/rewire.webp",
   },
 
   {
