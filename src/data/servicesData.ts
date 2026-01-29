@@ -2,14 +2,13 @@ export const services = [
   {
     title: "Electrical Panel Upgrades",
     description:
-      "Your electrical panel is the heart of your home’s power system. If it's outdated, undersized, or frequently tripping breakers, it may be time for an upgrade. Modern homes require more power than ever before, and an old panel may not be equipped to handle today’s appliances, EV chargers, and electronics safely.",
+      "Your electrical panel is the heart of your home’s power system. If it’s outdated, undersized, or experiencing frequent breaker trips, it may be time for an upgrade. Modern homes demand more power than ever, and older panels often aren’t designed to safely support today’s appliances, EV chargers, and electronics. We install and upgrade modern electrical panels and breakers from trusted manufacturers such as Siemens and other leading brands to ensure reliable, code-compliant performance.",
     details: {
       title: "Our panel upgrade services include:",
       items: [
         "Replacement of outdated panels with modern, high-capacity units",
         "Installation of new breakers, including AFCI and GFCI protection",
         "Rewiring and labeling for improved circuit management",
-        "Load calculations to ensure your panel meets current and future needs",
         "Coordination with utility companies and permit handling, if required",
       ],
     },
@@ -55,7 +54,7 @@ export const services = [
   {
     title: "EV Charger Installations",
     description:
-      "Charging your electric vehicle at home is convenient, efficient, and cost-effective — but only if your electrical system is set up correctly. We install Level 2 EV chargers and dedicated NEMA 14-50 outlets to provide fast, reliable charging for all major EV brands, including Tesla, Ford, Rivian, Chevy, and more.",
+      "Charging your electric vehicle at home is convenient, efficient, and cost-effective — but only if your electrical system is set up correctly. We install Level 2 EV chargers and dedicated NEMA 14-50 outlets to provide fast, reliable charging for all major EV brands. Our installations support popular charging equipment such as the Tesla Wall Connector, Emporia Level 2 EV Charger, ChargePoint Home Flex, and other hardwired or plug-in EV charging systems.",
     details: {
       title: "Our EV installation services include:",
       items: [
