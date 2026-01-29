@@ -9,4 +9,6 @@ export const company = {
   license: "1080652",
   yelp: "https://www.yelp.com/biz/advance-electrical-service-sunland-4?uid=XODK36fXyiqKNPp0DsMsMg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)",
   google: "https://share.google/j8TDI1O4btpv5cuj5",
+  thumbtack:
+    "https://www.thumbtack.com/ca/sunland/electrical-repairs/advance-electrical-pro-services/service/560730124321718277",
 };
