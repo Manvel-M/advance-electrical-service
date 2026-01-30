@@ -5,30 +5,23 @@ import { z } from "astro/zod";
  * If you don't want an enum, replace ServiceNeeded with z.string().min(1, "Select a service")
  */
 export const serviceOptions = [
-  "Panel Upgrade / Installation",
-  "Sub-Panel Upgrade / Installation",
-  "Circuit Breaker Replacement",
-  "Dedicated Circuit Installation",
-  "Backup Generator Installation",
+  "Electrical Panel & Sub-Panel Upgrades",
+  "Circuit Breaker Replacement & Dedicated Circuits",
   "Whole-Home Surge Protection",
+  "Backup Generator Installation",
 
-  "Whole-Home Rewiring",
-  "Appliance Circuit Installation (Dryer, Oven, HVAC, etc.)",
-  "Hot Tub / Pool Wiring",
+  "Whole-Home & Appliance Wiring",
+  "Hot Tub, Pool & HVAC Wiring",
 
-  "Light Fixture Installation / Replacement",
-  "Ceiling Fan Installation",
-  "Outlet Installation / Repair / Replacement",
-  "Switch Installation / Repair / Replacement",
-
+  "Lighting & Ceiling Fan Installation",
+  "Outlet & Switch Installation and Replacement",
   "Smoke & Carbon Monoxide Detector Installation",
-  "Doorbell / Camera Wiring",
+  "Doorbell & Camera Electrical Wiring",
 
   "EV Charger Installation",
-  "Landscape / Outdoor Lighting Installation",
+  "Outdoor & Landscape Lighting",
 
-  "Home Inspection",
-
+  "Electrical Inspections",
   "Troubleshooting & Diagnostics",
   "Other (please specify)",
 ] as const;
