@@ -8,7 +8,6 @@ export const serviceOptions = [
   "Electrical Panel & Sub-Panel Upgrades",
   "Circuit Breaker Replacement & Dedicated Circuits",
   "Whole-Home Surge Protection",
-  "Backup Generator Installation",
 
   "Whole-Home & Appliance Wiring",
   "Hot Tub, Pool & HVAC Wiring",
