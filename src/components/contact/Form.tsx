@@ -54,6 +54,7 @@ function Form() {
       if (response.data?.success) {
         setSubmissionState("success");
         reset();
+        window.location.href = "/thank-you";
       } else {
         setSubmissionState("error");
       }

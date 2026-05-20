@@ -3,6 +3,7 @@ export const navLinks = [
   { name: "Electrical Services", path: "/services" },
   { name: "Contact Us", path: "/contact" },
   { name: "About Our Company", path: "/about" },
+  { name: "Blog", path: "/blog" },
 ];
 export const socialLinks = [
   { name: "Facebook", url: "https://www.facebook.com" },

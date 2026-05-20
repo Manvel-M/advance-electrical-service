@@ -19,4 +19,14 @@ export const pageData = {
     description:
       "Contact Advance Electrical Pro Services to schedule electrical work or request a free estimate. Serving residential and commercial customers with professional electrical solutions.",
   },
+  blog: {
+    title: "Electrical Tips & Insights | Advance Electrical Pro Services Blog",
+    description:
+      "Stay informed with the Advance Electrical Pro Services blog, offering expert tips, insights, and updates on electrical safety, energy efficiency, and the latest industry trends.",
+  },
+  thanks: {
+    title: "Thank You | Advance Electrical Pro Services",
+    description:
+      "Thank you for choosing Advance Electrical Pro Services. We appreciate your business and look forward to providing you with safe, reliable, and code-compliant electrical solutions.",
+  },
 };
