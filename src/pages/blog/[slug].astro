@@ -18,5 +18,10 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <Content />
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <div class="bg-surface p-6 rounded-lg shadow-md">
+      <h1 class="text-center py-10">{post.data.title}</h1>
+      <Content />
+    </div>
+  </div>
 </Layout>
