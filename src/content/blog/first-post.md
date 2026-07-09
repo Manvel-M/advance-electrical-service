@@ -8,7 +8,7 @@ tags: ["webdev", "astro"]
 
 # Hello World
 
-Welcome to my new <a href="google.com" style="color: red!important;">blog</a> built with Astro. Because Astro renders to static HTML, this page loads incredibly fast.
+Welcome to my new <a href="google.com" style="color: red!important;">blog</a> built with Astro. <b>Because</b> Astro renders to static HTML, this page loads incredibly fast.
 
 ## Why Content Collections Rule
 
