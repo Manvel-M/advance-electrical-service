@@ -2,7 +2,7 @@
 title: "Can an Old Electrical Panel Increase Your Electricity Bill?"
 description: "Learn how an outdated panel may increase energy costs. Discover how an electrical panel upgrade improves efficiency, safety, and long-term savings."
 pubDate: 2026-07-08
-image: "/electricpanelupgrade.webp"
+image: "public/electricpanelupgrade.webp"
 tags: ["electrical panel upgrade", "electrician", "energy efficiency", "los angeles"]
 ---
 <img src="https://advanceelectricalpro.com/electricpanelupgrade.webp">
