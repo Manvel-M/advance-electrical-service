@@ -70,17 +70,15 @@ The average home uses more electricity today than ever before. From EV chargers 
 
 Not sure whether your panel is outdated? Here are some common warning signs that indicate it's time for a professional evaluation:<br><br>
 
-<ul>
-  <li>Frequent circuit breaker trips</li>
-  <li>Flickering or dimming lights</li>
-  <li>Burning smells near the electrical panel</li>
-  <li>Buzzing or crackling sounds</li>
-  <li>Warm or discolored breakers</li>
-  <li>Lack of available breaker space</li>
-  <li>Heavy reliance on extension cords or power strips</li>
-  <li>A panel that is more than 25–40 years old</li>
-  <li>Recent home additions, renovations, or increased electrical demand</li>
-</ul><br><br>
+1. Frequent circuit breaker trips
+2. Flickering or dimming lights
+3. Burning smells near the electrical panel
+4. Buzzing or crackling sounds
+5. Warm or discolored breakers
+6. Lack of available breaker space
+7. Heavy reliance on extension cords or power strips
+8. A panel that is more than 25–40 years old
+9. Recent home additions, renovations, or increased electrical demand<br><br>
 
 Ignoring these warning signs can lead to more significant electrical problems and potentially costly repairs down the road.<br><br>
 
@@ -100,11 +98,11 @@ With over 25 years of combined experience, Advanced Electrical Pro delivers safe
 
 We prioritize safety, code compliance, and expert craftsmanship, providing peace of mind on every project. Known for professional integrity, prompt communication, and exceptional service, we build lasting relationships while keeping your electrical systems efficient, safe, and future-ready.<br><br>
 
-- 25+ Years of Industry Experience
-- Licensed, Insured & Highly Skilled Electricians
-- Fast, Reliable & Professional Service
-- Code-Compliant Installations & Repairs
-- Residential & Commercial Electrical Expertise
+1. 25+ Years of Industry Experience
+2. Licensed, Insured & Highly Skilled Electricians
+3. Fast, Reliable & Professional Service
+4. Code-Compliant Installations & Repairs
+5. Residential & Commercial Electrical Expertise
 <br><br>
 ## Conclusion<br><br>
 
