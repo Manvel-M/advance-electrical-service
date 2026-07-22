@@ -107,9 +107,13 @@ With over 25 years of combined experience, Advanced Electrical Pro delivers safe
 We prioritize safety, code compliance, and expert craftsmanship, providing peace of mind on every project. Known for professional integrity, prompt communication, and exceptional service, we build lasting relationships while keeping your electrical systems efficient, safe, and future-ready.<br><br>
 
 ✓ 25+ Years of Industry Experience
+
 ✓ Licensed, Insured & Highly Skilled Electricians
+
 ✓ Fast, Reliable & Professional Service
+
 ✓ Code-Compliant Installations & Repairs
+
 ✓ Residential & Commercial Electrical Expertise
 <br><br>
 ## Conclusion<br><br>
