@@ -70,15 +70,17 @@ The average home uses more electricity today than ever before. From EV chargers 
 
 Not sure whether your panel is outdated? Here are some common warning signs that indicate it's time for a professional evaluation:<br><br>
 
-- Frequent circuit breaker trips
-- Flickering or dimming lights
-- Burning smells near the electrical panel
-- Buzzing or crackling sounds
-- Warm or discolored breakers
-- Lack of available breaker space
-- Heavy reliance on extension cords or power strips
-- A panel that is more than 25 to 40 years old
-- Recent home additions, renovations, or increased electrical demand<br><br>
+<ul>
+  <li>Frequent circuit breaker trips</li>
+  <li>Flickering or dimming lights</li>
+  <li>Burning smells near the electrical panel</li>
+  <li>Buzzing or crackling sounds</li>
+  <li>Warm or discolored breakers</li>
+  <li>Lack of available breaker space</li>
+  <li>Heavy reliance on extension cords or power strips</li>
+  <li>A panel that is more than 25–40 years old</li>
+  <li>Recent home additions, renovations, or increased electrical demand</li>
+</ul><br><br>
 
 Ignoring these warning signs can lead to more significant electrical problems and potentially costly repairs down the road.<br><br>
 
