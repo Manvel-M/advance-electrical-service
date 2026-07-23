@@ -61,13 +61,13 @@ Without a proper electrical panel upgrade, expanding your home’s electrical ca
 ✓ Burning smells or buzzing sounds<br>
 ✓ Limited capacity for modern appliances<br><br>
 
-If you notice any of these, it’s time to upgrade your electrical panel or schedule an <a href="https://advanceelectricalpro.com/services/" style="color:#FF7C00">electrical panel upgrade service</a>.
+If you notice any of these, it’s time to upgrade your electrical panel or schedule an <a href="https://advanceelectricalpro.com/services/" style="color:#FF7C00">electrical panel upgrade service</a>.<br><br>
 
 ## How an Outdated Panel Impacts Modern Appliances<br>
 
 Old electrical panels may not handle the power needs of modern appliances, causing frequent trips and unstable performance. Over time, this can reduce efficiency and shorten appliance lifespan. <br><br>
 
-###Appliances Work Harder Than Necessary<br>
+### Appliances Work Harder Than Necessary<br>
 
 Voltage inconsistencies caused by an old panel force motors and compressors to work harder. Refrigerators, washing machines, and HVAC units can consume more energy and wear out faster.<br><br>
 
@@ -98,7 +98,7 @@ If your electrical panel is outdated, the safest solution is a professional insp
 
 <a href="https://advanceelectricalpro.com/" style="color:#FF7C00">Electrical Panel Replacement or Upgrading</a>: Professional evaluation ensures the right solution.<br><br>
 
-✓ **When an Upgrade Is Sufficient:** Minor capacity increase or replacement of aged breakers.
+✓ **When an Upgrade Is Sufficient:** Minor capacity increase or replacement of aged breakers.<br><br>
 ✓ **When Full Replacement Is Necessary:** Outdated panels, aluminium wiring issues, or insufficient amperage.<br><br>
 
 ## Why Choose Advanced Electrical Pro?<br>
