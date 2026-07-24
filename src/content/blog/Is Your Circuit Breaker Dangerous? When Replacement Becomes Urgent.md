@@ -48,10 +48,10 @@ Recognising early warning signs can prevent major electrical emergencies.
 <br><br>
 If you suspect a breaker problem:<br><br>
 
-✓ Stop using heavy electrical appliances on affected circuits.
-✓ Avoid repeatedly resetting tripped breakers.
-✓ Turn off affected circuits if safe to do so.
-✓ Schedule a professional inspection immediately.
+✓ Stop using heavy electrical appliances on affected circuits.<br>
+✓ Avoid repeatedly resetting tripped breakers.<br>
+✓ Turn off affected circuits if safe to do so.<br>
+✓ Schedule a professional inspection immediately.<br>
 ✓ Request a complete electrical panel assessment.<br><br>
 
 Quick action can prevent costly repairs and reduce safety risks.
@@ -69,8 +69,8 @@ A failing breaker may not shut off power when dangerous conditions occur. This c
 <br><br>
 A failing breaker often struggles to manage electrical demand, leading to:<br><br>
 
-✓ Constant tripping
-✓ Unexpected power loss
+✓ Constant tripping<br>
+✓ Unexpected power loss<br>
 ✓ Unstable electricity flow<br><br>
 
 These interruptions can affect daily life and indicate growing electrical stress<br><br>
@@ -84,9 +84,9 @@ When breakers fail to regulate electrical flow properly, voltage fluctuations be
 Many older panels were never designed for modern energy consumption. Without a home circuit breaker replacement or panel upgrade, your system may struggle to support the following:
 Air conditioning systems<br><br>
 
-✓ EV chargers
-✓ High-powered kitchen appliances
-✓ Home office equipment
+✓ EV chargers<br>
+✓ High-powered kitchen appliances<br>
+✓ Home office equipment<br>
 ✓ Smart home technology
 <br><br>
 ### Higher Energy Waste and Inefficiency
@@ -98,11 +98,11 @@ Older electrical systems often operate less efficiently. While a breaker itself 
 When a breaker cannot properly manage electrical demand, the stress transfers to the wiring system.
 <br><br>
 
-This can lead to:
-✓ Overheated wiring
-✓ Loose electrical connections
-✓ Hidden wall damage
-✓ Expensive future repairs
+This can lead to:<br>
+✓ Overheated wiring<br>
+✓ Loose electrical connections<br>
+✓ Hidden wall damage<br>
+✓ Expensive future repairs<br>
 <br><br>
 
 ## Solutions: What You Should Do Immediately
