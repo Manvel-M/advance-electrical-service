@@ -47,6 +47,7 @@ function Form() {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
           "form-name": "contact",
+          subject: `New Lead: ${data.firstName} ${data.lastName}`,
           ...data,
         }).toString(),
       });
@@ -72,11 +73,6 @@ function Form() {
         name="contact"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input
-          type="hidden"
-          name="subject"
-          value="New Lead: %firstName% %lastName%"
-        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
