@@ -75,7 +75,7 @@ function Form() {
         <input
           type="hidden"
           name="subject"
-          value="New Inquiry %{firstName} %{lastName}"
+          value="New Lead: %firstName% %lastName%"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
