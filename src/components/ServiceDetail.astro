@@ -1,0 +1,48 @@
+---
+import CheckIcon from "@/assets/icons/check.svg";
+interface Props {
+  data: {
+    title: string;
+    description: string;
+    details: {
+      title: string;
+      items: string[];
+    };
+    note: string;
+    image: string;
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<div
+  class=`relative w-full h-[500px] bg-[url('${data.image}')] bg-no-repeat bg-center bg-cover text-surface-dark-foreground flex flex-col items-center justify-center`
+>
+  <div class="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm"></div>
+  <h1 class="text-center mt-8 z-10">{}</h1>
+</div>
+
+<div
+  class="max-w-7xl mx-auto px-4 py-12 bg-surface text-surface-foreground rounded-lg shadow-md my-10"
+>
+  <h2 class="text-2xl font-semibold mb-4">{data.title}</h2>
+  <p class="text-lg text-surface-dark-muted mb-6">
+    {data.description}
+  </p>
+  <ul class="mb-4">
+    {
+      data.details.items.map((detail) => (
+        <li class="ml-2">
+          <CheckIcon class="inline-block mr-2 w-5 h-5 text-green-700" />
+          {detail}
+        </li>
+      ))
+    }
+  </ul>
+  <img
+    src={data.image}
+    alt={data.title}
+    class="w-full h-auto max-w-[400px] rounded-lg shadow-md"
+  />
+</div>

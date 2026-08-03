@@ -29,4 +29,26 @@ export const pageData = {
     description:
       "Thank you for choosing Advance Electrical Pro Services. We appreciate your business and look forward to providing you with safe, reliable, and code-compliant electrical solutions.",
   },
+  panelUpgrade: {
+    title:
+      "Electrical Panel Upgrade Services | Advance Electrical Pro Services",
+    description:
+      "Upgrade your electrical panel with Advance Electrical Pro Services. Our licensed electricians provide safe, code-compliant panel upgrades for homes and businesses.",
+  },
+  rewiring: {
+    title: "Electrical Rewiring Services | Advance Electrical Pro Services",
+    description:
+      "Ensure your home or business is safe and up to code with Advance Electrical Pro Services' professional electrical rewiring services. Our licensed electricians provide reliable and efficient rewiring solutions.",
+  },
+  evCharger: {
+    title: "EV Charger Installation Services | Advance Electrical Pro Services",
+    description:
+      "Install a home EV charger with Advance Electrical Pro Services. Our licensed electricians provide safe, code-compliant EV charger installations for all major EV brands.",
+  },
+  lighting: {
+    title:
+      "Lighting Installation & Repair Services | Advance Electrical Pro Services",
+    description:
+      "Enhance your home or business with professional lighting installation and repair services from Advance Electrical Pro Services. Our licensed electricians ensure safe, code-compliant, and efficient lighting solutions.",
+  },
 };

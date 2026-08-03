@@ -1,0 +1,13 @@
+---
+import { Layout } from "@/layouts";
+import { service } from "@/data/servicesData";
+import ServiceDetail from "@/components/ServiceDetail.astro";
+import { pageData } from "@/data/pageData";
+---
+
+<Layout
+  title={pageData.evCharger.title}
+  description={pageData.evCharger.description}
+>
+  <ServiceDetail data={service.evcharger} />
+</Layout>
