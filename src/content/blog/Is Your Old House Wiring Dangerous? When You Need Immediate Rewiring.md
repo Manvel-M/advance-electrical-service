@@ -2,9 +2,9 @@
 title: "Is Your Old House Wiring Dangerous? When You Need Immediate Rewiring"
 description: "Is your home’s wiring a hidden fire hazard? Learn the critical warning signs of dangerous old electrical wiring and when you need immediate professional rewiring."
 pubDate: 2026-08-07
-image: "public/is-your-old-house-wiring-dangerous-when-you-need-immediate-rewiring.webp"
+image: "is your old house wiring dangerous.webp"
 ---
-<img src="https://advanceelectricalpro.com/public/is-your-old-house-wiring-dangerous-when-you-need-immediate-rewiring.webp">
+<img src="https://advanceelectricalpro.com/is your old house wiring dangerous.webp">
 
 <br>Older homes are full of charm, craftsmanship, and character, but behind their walls may be an electrical system that hasn't aged as gracefully. While outdated flooring or aging plumbing is easy to spot, old electrical wiring often remains hidden until a serious problem occurs. Unfortunately, faulty wiring is one of the leading causes of residential electrical fires, making it a risk that homeowners should never ignore. If your home is several decades old and still has much of its original wiring, it's important to understand the warning signs of electrical deterioration. Ignoring these issues can put your family, property, and valuable electronics at risk. In this blog, we'll explain why old house wiring can become dangerous, the signs that indicate you may need immediate rewiring, and when it's time to call a licensed electrician.<br><br>
 ## Why Old House Wiring Can Become Dangerous<br>
