@@ -1,7 +1,7 @@
 ---
 title: "Is Your Old House Wiring Dangerous? When You Need Immediate Rewiring"
 description: "Is your home’s wiring a hidden fire hazard? Learn the critical warning signs of dangerous old electrical wiring and when you need immediate professional rewiring."
-pubDate: 2026-08-07
+pubDate: 2026-08-12
 image: "public/is your old house wiring dangerous.webp"
 ---
 <img src="https://advanceelectricalpro.com/is%20your%20old%20house%20wiring%20dangerous.webp">
